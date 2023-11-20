@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Imagens - Dermatite Atópica</title>
+</head>
+<body>
+    <h1>Envio de Imagens - Dermatite Atópica</h1>
+    <p>Uma imagem nos ajudaria no seu prognostico!</p>
+
+    <form action="processa_envio.php" method="post" enctype="multipart/form-data">
+        <label for="imagem">Selecione sua imagem:</label>
+        <input type="file" name="imagem" id="imagem" accept="image/*" required>
+        <br>
+        <label for="nome">Digite seu nome completo:</label>
+        <input type="text" name="nome" id="nome" required>
+        <br>
+        <label for="comentario">Comentário:</label>
+        <textarea name="comentario" id="comentario" rows="4" required></textarea>
+        <br>
+        <input type="submit" value="Enviar Imagem">
+    </form>
+</body>
+</html>
